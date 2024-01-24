@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nextek</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script type="text/javascript" src="static/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/aa19448396.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/static/images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Welcome to Nextek</h1>
+                <p>At Nextek, we are not just an IT company; we are architects of dynamic digital experiences, sculptors of engaging interfaces, and your steadfast partner in the realm of website development. As the digital landscape continues to evolve, we stand as a beacon of innovation, empowering businesses with cutting-edge website solutions that leave a lasting impact.</p>
+                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-file-code"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/static/images/small_size_test.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Nextek</h1>
+                    <p>Welcome to Nextek, where innovation meets excellence in IT solutions! Established with a vision to transform businesses through cutting-edge technology, Nextek has been a trailblazer in the IT industry since 2023.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('other')">Other</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interface, Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Molestiae minus ipsam unde, vero repellendus corrupti voluptatibus eligendi. Numquam iure, facere, magnam animi dignissimos expedita itaque ut magni dolorem repudiandae unde.</li>
+                            <li><span>Web Development</span><br>Web App Development,Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odio est consectetur reprehenderit aliquid voluptatem ipsam quas quos fuga repellendus magni possimus sequi ex fugiat eaque, eius quo ipsum dicta!</li>
+                            <li><span>App Development</span><br>iOS/Android Development, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, esse sint placeat ipsa repellendus, sapiente totam perferendis corporis eum minus reiciendis cum molestiae inventore commodi rerum vero aliquid asperiores maiores!</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>XP</span><br>This and that,Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur sed quod magnam dolor earum illum facere odit ratione, explicabo, minus quas, sapiente eaque libero iure nemo dignissimos natus quo culpa!</li>
+                            <li><span>Experience</span><br>Test 123,Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident officiis non, quos nostrum doloribus numquam soluta optio officia tempora odit quo maiores aliquam voluptatum neque iste. Fugit ipsum ut voluptatem!</li>
+                            <li><span>Test</span><br>Experience,Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, porro cum laboriosam repudiandae possimus odit velit eos? Nesciunt nemo magnam omnis quaerat a incidunt perspiciatis, velit eveniet itaque quod! Voluptate.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="other">
+                        <ul>
+                            <li><span>Other</span><br>Other stuff, Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nam vel? Excepturi totam distinctio labore deleniti iure, temporibus praesentium nemo consequuntur voluptatum quisquam voluptates, quidem reprehenderit recusandae repellendus dolorum ex.</li>
+                            <li><span>Other II</span><br>Other stuff 2, Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti ratione laudantium cupiditate vitae deleniti aliquam qui quo voluptatibus. Quo aliquid, debitis ad hic dolore veniam nesciunt nostrum ex dignissimos.</li>
+                            <li><span>Other III</span><br>Other stuff 3, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque saepe earum eius voluptatibus, doloribus sunt laudantium sint possimus recusandae reiciendis nostrum numquam cum vero quidem ea perferendis quam tempore culpa?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Our Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>At Nextek, we understand that a visually appealing and user-friendly website is crucial for establishing a strong online presence. Our dedicated team of web designers combines creativity and technical expertise to craft stunning, responsive, and intuitive websites that captivate your audience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-uikit"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>In the ever-evolving digital landscape, user experience (UX) and user interface (UI) design play a pivotal role in the success of your digital products. At Nextek, our dedicated UX/UI design team is passionate about creating intuitive and visually appealing interfaces that not only meet but exceed user expectations.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-chrome"></i>
+                    <i class="fa-brands fa-safari"></i>
+                    <i class="fa-brands fa-firefox"></i>
+                    <h2>Web App Design</h2>
+                    <p>Transform your ideas into powerful, user-friendly, and visually stunning web applications with Nextek's comprehensive web app design services. Our experienced design team specializes in creating interfaces that not only look great but also provide an exceptional user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfoloio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Our Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/static/images/portfolio_image_1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>Random text, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga deleniti, optio iusto atque rem commodi natus. Ipsam odit praesentium aut modi incidunt consectetur! Accusantium at assumenda magnam itaque veritatis exercitationem.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/static/images/portfolio_image_2.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>Random text, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga deleniti, optio iusto atque rem commodi natus. Ipsam odit praesentium aut modi incidunt consectetur! Accusantium at assumenda magnam itaque veritatis exercitationem.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/static/images/portfolio_image_3.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>Random text, Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quae consectetur quas sit nulla eaque beatae magni doloribus est quasi quaerat omnis, ipsum quo inventore repudiandae praesentium dolores harum modi.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact us</h1>
+                    <p><i class="fa-regular fa-envelope"></i>  nexteklab.prod@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>  123-456-7890</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.upwork.com/"><i class="fa-brands fa-upwork"></i></a>
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="/submit_form" method="POST">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your E-mail" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer">
+            <div class="footer">
+                <!-- <h3>Social Media</h3> -->
+                <!-- <div class="footer-icons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div> -->
+                <div class="footer-terms">
+                    <a href="#">Terms and conditions. </a>
+                    <a href="#"> Privacy</a>
+                    <p><i class="fa-regular fa-copyright"></i> 2024 NexTek Lab. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
