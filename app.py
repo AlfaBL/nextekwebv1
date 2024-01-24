@@ -19,7 +19,7 @@ def send_email(name, email, message):
     password = "fhsi iwjl zhce nqww"
 
     receiver = "vidgogic@gmail.com"
-    subject = "New Message: "
+    subject = "New Message"
 
     body = f"Name: {name}\nEmail: {email}\nMessage: {message}"
 
