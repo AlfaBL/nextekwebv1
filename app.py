@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 
 from your_blueprint import your_blueprint
 
+import os
 import smtplib
 import ssl
 
@@ -50,7 +51,7 @@ def submit_form():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run(debug=False, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
 
 
 
