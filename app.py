@@ -1,10 +1,15 @@
 from flask import Flask, render_template, request
 
+from your_blueprint import your_blueprint
+
 import os
 import smtplib
 import ssl
 
 app = Flask(__name__)
+
+# Registrujte Blueprint
+app.register_blueprint(your_blueprint)
 
 def send_email(name, email, message):
     host = "smtp.gmail.com"
