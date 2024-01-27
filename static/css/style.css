@@ -4,6 +4,9 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background: #080808;
@@ -11,9 +14,9 @@ body{
 }
 
 #header{
-    width: 100%;
+    width: auto;
     height: 100vh;
-    background-image: url(Images/pexels-elti-meshau-333850.png); /*Background image */
+    background-image: url('/static/images/background-header.png'); /*Background image */
     background-size: cover;
     background-position: center;
 }
@@ -21,16 +24,40 @@ body{
 .container{
     padding: 10px 10%;
 }
+
+/* Sections */
+
+
+
+
 /* Navbar */
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    transition: 0.8s;
+    padding: 40px 100px;
+    z-index: 999;
+}
+nav.sticky{
+    padding: 15px 100px;
+    background: #110f0f;
+
 }
 
-.logo{
-    width: 140px;
+nav .logo{
+    width: 150px;
+}
+nav ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li{
@@ -44,12 +71,19 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    letter-spacing: 2px;
+    transition: 1s;
+
+    font-weight: 600;
+
 }
+
+
 nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff0454;
+    background:#ff0454c0;
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -58,21 +92,32 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-/* header text*/
+
+
+
+
+/* Header*/
+
+.Header{
+    text-align: center;
+}
 .header-text{
     margin-top: 20%;
     font-size: 30px;
     text-align: center;
+    text-shadow: 1px 1px 15px #080808;
 }
 .header-text h1{
     font-size: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px 0;
+    text-shadow: 1px 1px 15px #080808;
 }
 .header-text i{
     font-size: 60px;
     padding: 30px;
+    text-shadow: 1px 1px 15px #080808;
 }
 /* about */
 #about{
@@ -196,13 +241,13 @@ nav ul li a:hover::after{
 }
 .work-list div{
     background-size: auto;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     border-radius: 10px;
     transition: transform 0.5s;
 }
 .work-list div:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .work{
     border-radius: 10px;
@@ -216,14 +261,14 @@ nav ul li a:hover::after{
     opacity: 0.4;
 }
 .layer{
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    position: relative;
+    /* left: 0;
+    bottom: 0; */
     overflow: hidden;
-    display: flex;
+    display: inline;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -238,16 +283,25 @@ nav ul li a:hover::after{
     padding: 10px;
     font-size: 30px;
     color: #ff004f;
+    text-align: center;
+    position: relative;
+    left: 48%;
 }
 /* Contact */
+.contact{
+    text-align: center;
+}
 .contact-left{
     flex-basis: 35%;
 }
 .contact-right{
     flex-basis: 60%;
+    text-align: center;
+    display: block;
 }
 .contact-right form{
     width: 100%;
+    display: block;
 }
 form input, form textarea{
     width: 100%;
@@ -261,7 +315,7 @@ form input, form textarea{
     border-radius: 10px;
 }
 form .btn{
-    display: block;
+
     width: fit-content;
     cursor: pointer;
     margin: 20px 0;
@@ -303,7 +357,11 @@ form .btn{
 
 /* Footer */
 #footer{
+
+
+
     text-align: center;
+    padding-top: 50px;
 }
 .footer h3{
     padding-bottom: 20px;
@@ -315,6 +373,8 @@ form .btn{
 }
 .footer-terms{
     font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 .footer-terms a{
     text-decoration: none;
@@ -322,4 +382,165 @@ form .btn{
 }
 .footer-terms a:hover{
     color: #ff0454;
+}
+
+/* Typicical breakpoints for responsive layout <600px, 601px, 768px, 992px, 1200px */
+
+/* Responsive 600px or less  */
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 15px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    .header-text i{
+        font-size: 30px;
+    }
+    nav{
+        padding: 30px;
+    }
+    nav.sticky{
+        padding: 10px 50px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        display: block;
+        background: #262626;
+        position: fixed;
+        top: -120vh;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        z-index: 999;
+        transition: ease-in-out 1s;
+    }
+    nav ul li{
+        display: block;
+        margin: 35px;
+    }
+    nav ul li a:hover{
+        color: #ff004f;
+        background-color: #5c5c5c75;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        right: 50px;
+        cursor: pointer;
+    }
+    /* About */
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    /* Contact */
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    /* Footer */
+    .footer p{
+        font-size: 10px;
+        padding-bottom: 5px;
+    }
+}
+
+/* Responsive 900px or less  */
+
+@media only screen and (max-width: 992px) and (min-width: 601px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 18px;
+    }
+    .header-text h1{
+        font-size: 33px;
+    }
+    .header-text i{
+        font-size: 33px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 28px;
+    }
+    nav ul{
+        display: block;
+        background: #262626;
+        position: fixed;
+        top: -120vh;
+        left: 0;
+        width: 100%;
+        height: 30vh;
+        text-align: center;
+        z-index: 999;
+        transition: ease-in-out 0.9s;
+    }
+    nav ul li{
+        display: block;
+        margin: 35px;
+        transition: 0.5s;
+    }
+    nav ul li a:hover{
+        color: #ff004f;
+        background-color: #5c5c5c75;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        right: 95px;
+        cursor: pointer;
+    }
+    .navbar i{
+        cursor: pointer;
+    }
+    /* About */
+    .sub-title{
+        font-size: 44px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 40px;
+    }
+    .about-col-2{
+        font-size: 16px;
+    }
+    .tab-links{
+        font-size: 18px;
+        margin-right: 20px;
+    }
+    /* Contact */
+    /* .contact-left, .contact-right{
+        flex-basis: 100%;
+    } */
+    /* Footer */
+    .footer p{
+        font-size: 12px;
+        padding-bottom: 7px;
+    }
 }

@@ -6,7 +6,7 @@ import os
 import smtplib
 import ssl
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 # Registrujte Blueprint
 app.register_blueprint(your_blueprint)
