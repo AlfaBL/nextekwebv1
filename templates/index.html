@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextekStudio.com</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
-    <script type="text/javascript" src="static/js/index.js"></script>
+    <link rel="stylesheet" href="static/style.css">
+    <script defer src="static/main.js"></script>
     <script src="https://kit.fontawesome.com/aa19448396.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Nav-Bar -->
     <nav class="navbar">
-        <img src="/static/images/logo.png" class="logo">
+        <img src="static/images/nextek white.png" class="logo">
         <ul id="navbarmenu">
             <li><a href="#header" class="navbar-links active">Home</a></li>
             <li><a href="#about" class="navbar-links">About</a></li>
@@ -30,12 +30,37 @@
                 <div class="header-text">
                     <i class="fa-solid fa-code"></i>
                     <i class="fa-solid fa-file-code"></i>
-                    <h1>NextekStudio.com</h1>
-                    <p>Lets craft together.</p>
+                    <h1><span>Empower</span> Your Brand with Us </h1>
+                    <p>Bringing Your Ideas to Life with Innovative Web Design Solutions</p>
                 </div>
             </div>
         </div>
     </section>
+
+     <!-- BANNER
+        ---------------------------------------- -->
+        <div class="banner_wrapper">
+            <ul class="banner_list">
+                <li class="banner_item">
+                    <p>HTML5 <i class="fa-brands fa-html5"></i></p>
+                </li>
+                <li class="banner_item">
+                    <p>CSS <i class="fa-brands fa-css3-alt"></i></p>
+                </li>
+                <li class="banner_item">
+                    <p>JavaScript <i class="fa-brands fa-js"></i></p>
+                </li>
+                <li class="banner_item">
+                    <p>React <i class="fa-brands fa-react"></i></p>
+                </li>
+                <li class="banner_item">
+                    <p>node.js <i class="fa-brands fa-node-js"></i></p>
+                </li>
+                <li class="banner_item">
+                    <p>Figma <i class="fa-brands fa-figma"></i></p>
+                </li>
+            </ul>
+        </div>
 
     <!-- About -->
 
@@ -44,11 +69,11 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="/static/images/small_size_test.png">
+                        <img src="static/images/test_laptop.png">
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Title</h1>
-                        <p>Welcome to Nextek, where innovation meets excellence in IT solutions! Established with a vision to transform businesses through cutting-edge technology, Nextek has been a trailblazer in the IT industry since 2023.</p>
+                        <p>Nextek Studio was founded in 2018 with a passion for innovation in the digital space. Based in Las Vegas, our expertise knows no geographic bounds. With over a decade of experience, our team of 5 talented experts works in harmony to deliver high quality services to clients worldwide. Our strength lies in the diversity of our team, from seasoned programmers to creative designers. Each member brings unique skills and expertise, enabling us to tackle the challenges of the most varied projects.</p>
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                             <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -121,7 +146,7 @@
                 <h1 class="sub-title">Our Work</h1>
                 <div class="work-list">
                     <div class="work">
-                        <img src="/static/images/portfolio_image_1.png" alt="">
+                        <img src="static/images/portfolio image 1.jpg" alt="">
                         <div class="layer">
                             <h3>Project 01</h3>
                             <p>Random text,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, molestiae! Quaerat rem modi ratione praesentium ex, exercitationem corrupti at, molestias libero minima quod consectetur aspernatur vel totam placeat iure alias?</p>
@@ -129,7 +154,7 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="/static/images/portfolio_image_2.png" alt="">
+                        <img src="static/images/portfolio image 2.jpg" alt="">
                         <div class="layer">
                             <h3>Project 02</h3>
                             <p>Random text, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga deleniti, optio iusto atque rem commodi natus. Ipsam odit praesentium aut modi incidunt consectetur! Accusantium at assumenda magnam itaque veritatis exercitationem.</p>
@@ -137,7 +162,7 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="/static/images/portfolio_image_3.png" alt="">
+                        <img src="static/images/project_01.png" alt="">
                         <div class="layer">
                             <h3>Project 03</h3>
                             <p>Random text, Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quae consectetur quas sit nulla eaque beatae magni doloribus est quasi quaerat omnis, ipsum quo inventore repudiandae praesentium dolores harum modi.</p>
@@ -149,6 +174,8 @@
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer>
     <!-- Contact -->
     <section class="Contact">
         <div id="contact">
@@ -157,7 +184,7 @@
                     <div class="contact-left">
                         <h1 class="sub-title">Contact us</h1>
                         <p><i class="fa-regular fa-envelope"></i> info@nextekstudio.com</p>
-                        <p><i class="fa-solid fa-phone"></i>  123-456-7890</p>
+                        <!-- <p><i class="fa-solid fa-phone"></i>  123-456-7890</p> -->
                         <div class="social-icons">
                             <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
                             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
@@ -171,7 +198,7 @@
                             <input type="text" name="Name" placeholder="Your Name" required>
                             <input type="email" name="email" placeholder="Your E-mail" required>
                             <textarea name="message" rows="6" placeholder="Your message"></textarea>
-                            <button type="submit" class="btn">Submit</button>
+                            <button type="submit" class="btn">SUBMIT</button>
                         </form>
                     </div>
                 </div>
@@ -184,7 +211,7 @@
         <div id="footer">
             <div class="footer">
                 <div class="footer-terms">
-                    <p><i class="fa-regular fa-copyright"></i> 2024 Nextek Studio | All rights reserved | <a href="#"> Terms and conditions  <i class="fa-solid fa-up-right-from-square">|</i></a><a href="#"> Privacy  <i class="fa-solid fa-up-right-from-square">|</i></a></p>
+                    <p><i class="fa-regular fa-copyright"></i> 2024 Nextek Studio| All rights reserved| <a href="#"> Terms and conditions  <i class="fa-solid fa-up-right-from-square">|</i></a><a href="#"> Privacy  <i class="fa-solid fa-up-right-from-square">|</i></a></p>
                 </div>
             </div>
         </div>

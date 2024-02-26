@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 
 from your_blueprint import your_blueprint
 
@@ -15,10 +15,10 @@ def send_email(name, email, message):
     host = "smtp.gmail.com"
     port = 465
 
-    username = "vidgogic@gmail.com"
-    password = "fhsi iwjl zhce nqww"
+    username = "nextekstudio@gmail.com"
+    password = "mjpf slzu swhl nunf"
 
-    receiver = "vidgogic@gmail.com"
+    receiver = "nextekstudio@gmail.com"
     subject = "New Message"
 
     body = f"Name: {name}\nEmail: {email}\nMessage: {message}"
@@ -47,7 +47,7 @@ def submit_form():
         send_email(name, email, message)
 
         #Vraća na index.html nakon slanja mail-a
-        return render_template('index.html')
+        return redirect(url_for('index'))
 
 
 if __name__ == '__main__':
