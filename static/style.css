@@ -21,6 +21,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 .container{
@@ -132,7 +133,7 @@ nav ul li a:hover::after{
     gap: 40px;
     justify-content: space-between;
     font-size: 26px;
-    color: #F3E1C7;
+    color: #ffffff;
     background: rgba(255, 255, 255, 0.05);
 }
 
