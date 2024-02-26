@@ -141,7 +141,7 @@ nav ul li a:hover::after{
 }
 
 .banner_wrapper ul li:hover {
-    color: #F45325;
+    color: #278f8f;
     transform: translateY(-10px);
 }
 

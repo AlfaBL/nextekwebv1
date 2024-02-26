@@ -32,6 +32,9 @@ def send_email(name, email, message):
 @app.route('/')
 def index():
     return render_template('index.html')
+@app.route('/home')
+def home():
+    return redirect(url_for('index'))
 
 @app.route('/submit_form', methods=['POST'])
 def submit_form():
