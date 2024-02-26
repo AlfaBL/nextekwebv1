@@ -157,6 +157,25 @@ nav ul li a:hover::after{
     }
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header-text {
+        padding: 40px;
+        font-size: 18px;
+    }
+
+      #header {
+        height: auto;
+    }
+
+    .banner_wrapper ul {
+        padding: 20px 10%;
+    }
+}
+
 /* about */
 #about{
     padding: 80px 0px;
