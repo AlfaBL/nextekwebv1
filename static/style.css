@@ -125,7 +125,7 @@ nav ul li a:hover::after{
 
 /* BANNER
 ---------------------------------------- */
-.banner_wrapper ul{
+.banner_wrapper ul {
     padding: 30px 10%;
     list-style: none;
     display: flex;
@@ -135,12 +135,26 @@ nav ul li a:hover::after{
     color: #F3E1C7;
     background: rgba(255, 255, 255, 0.05);
 }
-.banner_wrapper ul li{
+
+.banner_wrapper ul li {
     transition: transform 0.5s ease;
 }
-.banner_wrapper ul li:hover{
+
+.banner_wrapper ul li:hover {
     color: #F45325;
     transform: translateY(-10px);
+}
+
+@media only screen and (max-width: 768px) {
+    .banner_wrapper ul {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner_wrapper ul li {
+        margin-bottom: 20px;
+    }
 }
 
 /* about */
