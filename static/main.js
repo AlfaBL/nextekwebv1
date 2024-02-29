@@ -4,7 +4,7 @@ function openmenu(){
     navbarmenu.style.right = "0";
 }
 function closemenu(){
-    navbarmenu.style.right ="-200px";
+    navbarmenu.style.right ="-300px";
 }
 
 
